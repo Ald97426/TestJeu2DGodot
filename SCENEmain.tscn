@@ -37,3 +37,4 @@ shape = SubResource("RectangleShape2D_vkwea")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 
 [node name="Node3D" type="Node3D" parent="."]
+[node name="Node2D" type="Node2D" parent="."]
