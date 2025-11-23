@@ -33,3 +33,5 @@ texture = SubResource("MeshTexture_t3vo5")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 position = Vector2(0, -12)
 shape = SubResource("RectangleShape2D_vkwea")
+
+[node name="Node3D" type="Node3D" parent="."]
