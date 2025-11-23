@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://b61cpfqus7otj"]
+[gd_scene load_steps=6 format=3 uid="uid://b61cpfqus7otj"]
 
 [ext_resource type="TileSet" uid="uid://d1sjvjbdrm8n3" path="res://new_tile_set.tres" id="1_t3vo5"]
+[ext_resource type="PackedScene" uid="uid://rbaivt0ic3st" path="res://node.tscn" id="2_vkwea"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_gw1nc"]
 
@@ -34,4 +35,4 @@ texture = SubResource("MeshTexture_t3vo5")
 position = Vector2(0, -12)
 shape = SubResource("RectangleShape2D_vkwea")
 
-[node name="Node3D" type="Node3D" parent="."]
+[node name="Node" parent="." instance=ExtResource("2_vkwea")]
