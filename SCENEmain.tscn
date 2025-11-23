@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://b61cpfqus7otj"]
+
+[ext_resource type="TileSet" uid="uid://d1sjvjbdrm8n3" path="res://new_tile_set.tres" id="1_t3vo5"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_gw1nc"]
+
+[sub_resource type="MeshTexture" id="MeshTexture_t3vo5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vkwea"]
+size = Vector2(12, 24)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+position = Vector2(0, -15)
+tile_set = ExtResource("1_t3vo5")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(0, -15)
+zoom = Vector2(4.565, 4.565)
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="CharacterBody2D"]
+position = Vector2(0, -12)
+scale = Vector2(-12.217383, -24.144814)
+mesh = SubResource("BoxMesh_gw1nc")
+texture = SubResource("MeshTexture_t3vo5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(0, -12)
+shape = SubResource("RectangleShape2D_vkwea")
